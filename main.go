@@ -45,7 +45,6 @@ func main() {
 	var c creds
 
 	data, err := ioutil.ReadAll(os.Stdin)
-	fmt.Println(data)
 	checkErr(err)
 
 	err = json.Unmarshal(data, &c)
